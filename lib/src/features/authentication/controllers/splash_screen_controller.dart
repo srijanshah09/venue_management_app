@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:venue_management_app/main.dart';
+import 'package:venue_management_app/src/features/authentication/screens/onboarding_screen/on_boarding_screen.dart';
 
 class SplashScreenController extends GetxController {
   static SplashScreenController get find => Get.find();
@@ -10,6 +10,6 @@ class SplashScreenController extends GetxController {
     await Future.delayed(Duration(milliseconds: 500));
     animate.value = true;
     await Future.delayed(Duration(milliseconds: 5000));
-    Get.to(MyHomePage(title: "My App Home"));
+    Get.to(OnBoardingScreen());
   }
 }
